@@ -1,0 +1,13 @@
+(defun Fib()
+(setq num0 0)
+(setq num1 1)
+(setq num 1)
+(message "First term %d: " num0)
+(message "Second term %d: " num1)
+(while (< num 20)
+(setq num2  (+ num1 num0))
+(setq num0 num1)
+(setq num1 num2)
+(message "Fibonacci number %d : %d" num num2)
+(setq num ( + 1 num))))
+
