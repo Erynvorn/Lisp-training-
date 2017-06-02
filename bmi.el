@@ -6,3 +6,5 @@
 (/ poids (* hauteur hauteur)))
 
 (bmi 84.5 1.79)
+
+unicorn
