@@ -8,4 +8,5 @@
 (if (eq ( % num 5) 0) (setq alert2 "Buzz" alert0 1))
 (setq alert1 (concat alert1  alert2))
 (if (eq alert0 0) (message " Iteration: %d" num)(message " Iteration: %s"  alert1))
-(setq num (+ 1 num))))
+(setq num (+ 1 num)))
+)
