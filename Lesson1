@@ -1,0 +1,60 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+
+ (+ 30 40)
+
+(- 100 200)
+
+(* 8 9 )
+
+(/ 72 3)
+
+(/ 4 3)
+
+10
+
+(defun square(x) (* x x))
+
+(square 20)
+
+(defun sum_of_square( x y) (+ (square x) (square y )))
+
+(sum_of_square 3 4)
+
+(defun abs (x)
+  (cond ((> x 0) x)
+        ((= x 0) 0)
+        ((< x 0) (- x)))
+
+(abs -3)
+
+10
+(+ 5 3 4)
+(- 9 1)
+(/ 6 2)
+(+ (* 2 4) (- 4 6))
+(setq a 3)
+a
+(setq b (+ a 1))
+(+ a b (* a b))
+(= a b)
+(if (and (> b a) (< b (* a b)))
+    b
+    a)
+(cond ((= a 4) 6)
+      ((= b 4) (+ 6 7 a))
+      (else 25))
+(+ 2 (if (> b a) b a))
+(* (cond ((> a b) a)
+         ((< a b) b)
+         (else -1))
+   (+ a 1))
+
+(defun sum_of_square2 x y z)
+ (cond (> x y) 
+       (cond(> y z) (+ (square x) (square y))
+	    (+ (square x) (square z)))
+       (+ (square y) (square z))))
+
+(sum_of_square__two_largest 1 2 3)
