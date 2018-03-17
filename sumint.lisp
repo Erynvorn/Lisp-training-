@@ -35,3 +35,9 @@
 
 (defun suminteger ( a b )
   (SUM (lambda (x) (+ 0 x))  a (lambda (y) (+ 1 y)) b))
+
+(defun oneplus (z)
+  (1+ z))
+
+(defun suminterplus ( a b )
+  (SUM #'Idntty a #'1+  b))
